@@ -1,5 +1,9 @@
 # TripleT Model Rocket Launch System
 
+## Disclaimer
+
+**Rocketry is a dangerous activity. This project is a prototype and should be used with extreme caution. The creators of this project are not responsible for any damage or injury that may occur from the use of this system. Always follow safety guidelines and local laws when participating in rocketry activities.**
+
 This is a prototype Launch System for Model Rockets. This document outlines the hardware and software features of the system.
 
 ## Features
