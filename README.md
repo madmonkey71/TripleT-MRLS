@@ -42,5 +42,8 @@ The system is managed through a web frontend running on the ESP32.
     - Real-time display of environmental sensor data.
     - A system status page showing battery level, WiFi connection, and GPS lock.
 
+## Hardware Schematic
+A hardware schematic can be found in `Hardware_Schematic.md`
+
 ## Project Plan
 The full project plan and definition can be found in `Project_Definition.md`.
