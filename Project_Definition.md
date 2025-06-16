@@ -13,10 +13,19 @@ This is a prototype Launch System for Model Rockets
 - The controller will need to continuity check each channel to ensure that the pad / ignitor is correctly connected using less than 10mW of power.
 - The controller will need to be able to monitor the LiPo battery that is powering the system.
 - An 11.7 Volt Lithium Polymer battery to power the system
+- Environmental sensors for Temperature, Humidity, and Barometric Pressure to log launch conditions.
+- GPS module for logging launch site coordinates.
+- SD Card for logging all system events and sensor data.
+- Onboard display (OLED or LCD) for at-a-glance system status.
+- Buzzer for audible feedback (e.g., arming, countdowns, alerts).
 
-## Command Interface
+## Web Command Interface
 - Range open and closed commands
   - A Pin number securing range open and close button to prevent accidental opening of the range.
 - A Launch command for each pad
 - Display the continuity check for each pad / channel
+- Real-time display of environmental sensor data (Temperature, Humidity, Pressure).
+- Visual countdown timer before launch.
+- A system status page showing battery level, WiFi connection, and GPS lock.
+- Ability to create and execute simple launch sequences.
 
