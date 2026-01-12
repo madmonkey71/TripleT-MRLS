@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripleT MRLS Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TripleT Model Rocket Launch System</h1>
+        </header>
+
+        <main>
+            <div id="status-dashboard">
+                <h2>System Status</h2>
+                <p><strong>State:</strong> <span id="state">--</span></p>
+                <p><strong>Battery:</strong> <span id="battery">--</span>V (<span id="battery-percent">--</span>%)</p>
+                <p><strong>Pads Ready:</strong> <span id="pads-ready">--</span>/16</p>
+            </div>
+
+            <div id="control-panel">
+                <h2>Master Control</h2>
+                <div class="control-group">
+                    <button id="btn-arm" class="btn btn-warning">Arm</button>
+                    <button id="btn-disarm" class="btn btn-safe">Disarm</button>
+                </div>
+                <div class="control-group">
+                    <button id="btn-range-open" class="btn">Open Range</button>
+                    <button id="btn-range-close" class="btn">Close Range</button>
+                </div>
+            </div>
+
+            <div id="launch-pads">
+                <h2>Launch Pads</h2>
+                <div id="pads-grid">
+                    <!-- Pad statuses will be injected here by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Arming Confirmation -->
+    <div id="arm-modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirm Arming</h3>
+            <p>Type "ARM" to confirm.</p>
+            <input type="text" id="arm-confirm-input" autocomplete="off">
+            <button id="btn-confirm-arm" class="btn btn-warning">Confirm</button>
+            <button id="btn-cancel-arm" class="btn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Modal for PIN Confirmation -->
+    <div id="pin-modal" class="modal">
+        <div class="modal-content">
+            <h3>Enter PIN</h3>
+            <input type="password" id="pin-input" autocomplete="off">
+            <button id="btn-confirm-pin" class="btn">Confirm</button>
+            <button id="btn-cancel-pin" class="btn">Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
